@@ -1,0 +1,143 @@
+def greeting(name):
+    print("Welcome", name)
+
+greeting("Priya")
+
+def add(a, b):
+    return a + b
+
+
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+print("Sum =", result)
+
+def even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(even_odd(7))
+
+def even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(even_odd(7))
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    return fact
+
+print("Factorial =", factorial(5))
+
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    return facbt
+
+print("Factorial =", factorial(5))
+
+def largest(a, b, c):
+    return max(a, b, c)
+
+print("Largest =", largest(10, 25, 15))
+
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 80:
+        return "B"
+    elif marks >= 70:
+        return "C"
+    elif marks >= 60:
+        return "D"
+    else:
+        return "F"
+
+print("Grade =", calculate_grade(98))
+
+def total(numbers):
+    return sum(numbers)
+
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+def minimum(numbers):
+    return min(numbers)
+
+def maximum(numbers):
+    return max(numbers)
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Total =", total(numbers))
+print("Average =", average(numbers))
+print("Minimum =", minimum(numbers))
+print("Maximum =", maximum(numbers))
+
+def total(numbers):
+    return sum(numbers)
+
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+def minimum(numbers):
+    return min(numbers)
+
+def maximum(numbers):
+    return max(numbers)
+
+numbers = [10, 20, 30, 40, 50]
+
+balance = 2000
+
+def deposit(amount):
+    global balance
+    if amount > 500:
+        balance += amount
+        print("Amount deposited successfully")
+
+def withdraw(amount):
+    global balance
+    if amount <= 0:
+        print("Invalid amount")
+    elif amount <= balance:
+        balance -= amount
+        print("Amount withdrawn successfully")
+    else:
+        print("Insufficient balance")
+
+def show_balance():
+    print("Current Balance =", balance)
+
+while True:
+    print ("/n banking menu")
+    print("1. Deposit")
+    print("2. Withdraw")
+    print("3. Show Balance")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        amount = float(input("Enter amount: "))
+        deposit(amount)
+    elif choice == "2":
+        amount = float(input("Enter amount: "))
+        withdraw(amount)
+    elif choice == "3":
+        show_balance(200)
+    elif choice == "4":
+        print("Thank you!")
+        break
+    else:
+        print("Invalid amount")
